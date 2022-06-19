@@ -1,0 +1,278 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: N/A N/A, N/A, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.32.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14.1
+Assembler:       Armasm.exe V6.14.1
+Linker/Locator:  ArmLink.exe V6.14.1
+Library Manager: ArmAr.exe V6.14.1
+Hex Converter:   FromElf.exe V6.14.1
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\STM32f429xx_HAL_Drivers\__HAL_GPIO_Driver\STM32f429xx_GPIO_Driver.uvprojx
+Project File Date:  12/05/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14.1', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+main.c(3): warning: In file included from...
+./HAL_SPI_Driver.h(270): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_DRIVER
+       ^
+       //
+main.c(4): warning: In file included from...
+./spi_master.h(17): warning: no previous extern declaration for non-static variable 'TestReady' [-Wmissing-variable-declarations]
+uint8_t TestReady = 0;
+        ^
+./spi_master.h(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t TestReady = 0;
+^
+./spi_master.h(25): warning: no previous extern declaration for non-static variable 'slave_replay_data' [-Wmissing-variable-declarations]
+ uint8_t slave_replay_data[4]={0x55, 0xbb, 0x55, 0xbb};
+         ^
+./spi_master.h(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ uint8_t slave_replay_data[4]={0x55, 0xbb, 0x55, 0xbb};
+ ^
+./spi_master.h(28): warning: no previous extern declaration for non-static variable 'master_write_buff' [-Wmissing-variable-declarations]
+ uint8_t master_write_buff[4]={0x0a, 0x0b, 0x0c, 0x0d};
+         ^
+./spi_master.h(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ uint8_t master_write_buff[4]={0x0a, 0x0b, 0x0c, 0x0d};
+ ^
+./spi_master.h(39): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_Matser
+       ^
+       //
+main.c(5): warning: In file included from...
+./application_SPI.h(8): warning: In file included from...
+./application_SPI.h(29): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_APP
+       ^
+       //
+main.c(5): warning: In file included from...
+./application_SPI.h(29): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_APP
+       ^
+       //
+main.c(2): warning: In file included from...
+./HAL_GPIO_Driver.h(148): warning: padding struct 'GPIO_Pin_Config_t' with 3 bytes to align 'Mode' [-Wpadded]
+        uint32_t Mode;
+                 ^
+main.c(3): warning: In file included from...
+./HAL_SPI_Driver.h(158): warning: padding size of 'SPI_Handle_t' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+main.c(13): warning: unused variable 'i' [-Wunused-variable]
+        uint8_t i = 0;
+                ^
+main.c(131): warning: code will never be executed [-Wunreachable-code]
+        while(1);
+              ^
+main.c(4): warning: In file included from...
+./spi_master.h(29): warning: no previous extern declaration for non-static variable 'master_read_buff' [-Wmissing-variable-declarations]
+ uint8_t master_read_buff[4];
+         ^
+./spi_master.h(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ uint8_t master_read_buff[4];
+ ^
+12 warnings generated.
+compiling main.c...
+HAL_GPIO_Driver.c(2): warning: In file included from...
+./HAL_GPIO_Driver.h(148): warning: padding struct 'GPIO_Pin_Config_t' with 3 bytes to align 'Mode' [-Wpadded]
+        uint32_t Mode;
+                 ^
+HAL_GPIO_Driver.c(61): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void HAL_GPIO_ReadPin(GPIO_TypeDef *GPIOx , uint8_t GPIO_Pin)
+                                    ^
+HAL_GPIO_Driver.c(61): warning: unused parameter 'GPIO_Pin' [-Wunused-parameter]
+void HAL_GPIO_ReadPin(GPIO_TypeDef *GPIOx , uint8_t GPIO_Pin)
+                                                    ^
+3 warnings generated.
+compiling HAL_GPIO_Driver.c...
+HAL_SPI_Driver.c(3): warning: In file included from...
+./HAL_SPI_Driver.h(270): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_DRIVER
+       ^
+       //
+./HAL_SPI_Driver.h(158): warning: padding size of 'SPI_Handle_t' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+HAL_SPI_Driver.c(188): warning: unused parameter 'SPI_Handle' [-Wunused-parameter]
+static void HAL_SPI_Slave_NSS(SPI_Handle_t *SPI_Handle , uint8_t *RxbufferS , uint16_t len)
+                                            ^
+HAL_SPI_Driver.c(188): warning: unused parameter 'RxbufferS' [-Wunused-parameter]
+static void HAL_SPI_Slave_NSS(SPI_Handle_t *SPI_Handle , uint8_t *RxbufferS , uint16_t len)
+                                                                  ^
+HAL_SPI_Driver.c(188): warning: unused parameter 'len' [-Wunused-parameter]
+static void HAL_SPI_Slave_NSS(SPI_Handle_t *SPI_Handle , uint8_t *RxbufferS , uint16_t len)
+                                                                                       ^
+HAL_SPI_Driver.c(203): warning: unused parameter 'SPI_Handle' [-Wunused-parameter]
+static void HAL_SPI_Master_NSS(SPI_Handle_t *SPI_Handle , uint8_t *RxbufferS , uint16_t len)
+                                             ^
+HAL_SPI_Driver.c(203): warning: unused parameter 'RxbufferS' [-Wunused-parameter]
+static void HAL_SPI_Master_NSS(SPI_Handle_t *SPI_Handle , uint8_t *RxbufferS , uint16_t len)
+                                                                   ^
+HAL_SPI_Driver.c(203): warning: unused parameter 'len' [-Wunused-parameter]
+static void HAL_SPI_Master_NSS(SPI_Handle_t *SPI_Handle , uint8_t *RxbufferS , uint16_t len)
+                                                                                        ^
+HAL_SPI_Driver.c(269): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        SPIx->CR2 &= ~(1 << 7);
+                  ~~ ^~~~~~~~~
+HAL_SPI_Driver.c(491): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                Hspi->Instance->DR = *((uint16_t*)Hspi->pTXBuffer);
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+HAL_SPI_Driver.c(522): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'uint16_t *' (aka 'unsigned short *') increases required alignment from 1 to 2 [-Wcast-align]
+                                *((uint16_t*)Hspi->pRXBuffer) = (uint16_t)Hspi->Instance->DR;
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+HAL_SPI_Driver.c(188): warning: unused function 'HAL_SPI_Slave_NSS' [-Wunused-function]
+static void HAL_SPI_Slave_NSS(SPI_Handle_t *SPI_Handle , uint8_t *RxbufferS , uint16_t len)
+            ^
+HAL_SPI_Driver.c(203): warning: unused function 'HAL_SPI_Master_NSS' [-Wunused-function]
+static void HAL_SPI_Master_NSS(SPI_Handle_t *SPI_Handle , uint8_t *RxbufferS , uint16_t len)
+            ^
+HAL_SPI_Driver.c(291): warning: unused function 'HAL_SPI_RXNE_Disable_Interrupt' [-Wunused-function]
+static void HAL_SPI_RXNE_Disable_Interrupt(SPI_TypeDef *SPIx)
+            ^
+HAL_SPI_Driver.c(402): warning: unused function 'HAL_SPI_NSS_Master' [-Wunused-function]
+static void HAL_SPI_NSS_Master(SPI_TypeDef *pSPIx , uint32_t NSSManagement)
+            ^
+15 warnings generated.
+compiling HAL_SPI_Driver.c...
+application_SPI.c(3): warning: In file included from...
+./application_SPI.h(6): warning: In file included from...
+./HAL_SPI_Driver.h(270): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_DRIVER
+       ^
+       //
+application_SPI.c(3): warning: In file included from...
+./application_SPI.h(8): warning: In file included from...
+./application_SPI.h(29): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_APP
+       ^
+       //
+application_SPI.c(3): warning: In file included from...
+./application_SPI.h(29): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_APP
+       ^
+       //
+application_SPI.c(2): warning: In file included from...
+./HAL_GPIO_Driver.h(148): warning: padding struct 'GPIO_Pin_Config_t' with 3 bytes to align 'Mode' [-Wpadded]
+        uint32_t Mode;
+                 ^
+4 warnings generated.
+compiling application_SPI.c...
+spi_master.c(2): warning: In file included from...
+./spi_master.h(17): warning: no previous extern declaration for non-static variable 'TestReady' [-Wmissing-variable-declarations]
+uint8_t TestReady = 0;
+        ^
+./spi_master.h(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t TestReady = 0;
+^
+./spi_master.h(25): warning: no previous extern declaration for non-static variable 'slave_replay_data' [-Wmissing-variable-declarations]
+ uint8_t slave_replay_data[4]={0x55, 0xbb, 0x55, 0xbb};
+         ^
+./spi_master.h(25): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ uint8_t slave_replay_data[4]={0x55, 0xbb, 0x55, 0xbb};
+ ^
+./spi_master.h(28): warning: no previous extern declaration for non-static variable 'master_write_buff' [-Wmissing-variable-declarations]
+ uint8_t master_write_buff[4]={0x0a, 0x0b, 0x0c, 0x0d};
+         ^
+./spi_master.h(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ uint8_t master_write_buff[4]={0x0a, 0x0b, 0x0c, 0x0d};
+ ^
+./spi_master.h(39): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_Matser
+       ^
+       //
+spi_master.c(4): warning: In file included from...
+./application_SPI.h(6): warning: In file included from...
+./HAL_SPI_Driver.h(270): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_DRIVER
+       ^
+       //
+spi_master.c(4): warning: In file included from...
+./application_SPI.h(8): warning: In file included from...
+./application_SPI.h(29): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_APP
+       ^
+       //
+spi_master.c(4): warning: In file included from...
+./application_SPI.h(29): warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif __HAL_SPI_APP
+       ^
+       //
+spi_master.c(4): warning: In file included from...
+./application_SPI.h(6): warning: In file included from...
+./HAL_SPI_Driver.h(158): warning: padding size of 'SPI_Handle_t' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+spi_master.c(48): warning: no newline at end of file [-Wnewline-eof]
+        
+        ^
+spi_master.c(2): warning: In file included from...
+./spi_master.h(29): warning: no previous extern declaration for non-static variable 'master_read_buff' [-Wmissing-variable-declarations]
+ uint8_t master_read_buff[4];
+         ^
+./spi_master.h(29): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ uint8_t master_read_buff[4];
+ ^
+10 warnings generated.
+compiling spi_master.c...
+assembling startup_stm32f429xx.s...
+compiling system_stm32f4xx.c...
+linking...
+.\Objects\STM32f429xx_GPIO_Driver.axf: Error: L6200E: Symbol TestReady multiply defined (by spi_master.o and main.o).
+.\Objects\STM32f429xx_GPIO_Driver.axf: Error: L6200E: Symbol master_read_buff multiply defined (by spi_master.o and main.o).
+.\Objects\STM32f429xx_GPIO_Driver.axf: Error: L6200E: Symbol master_write_buff multiply defined (by spi_master.o and main.o).
+.\Objects\STM32f429xx_GPIO_Driver.axf: Error: L6200E: Symbol slave_replay_data multiply defined (by spi_master.o and main.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 4 error messages.
+".\Objects\STM32f429xx_GPIO_Driver.axf" - 4 Error(s), 44 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\chiahou-lahbib\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\chiahou-lahbib\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F42xxx_43xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f429xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:10
+</pre>
+</body>
+</html>
